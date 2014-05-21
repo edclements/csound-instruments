@@ -1,0 +1,46 @@
+8;  						  	internal oversampling
+5; 									n times amplification before tube simulation
+1;    					  	n times amplification after tube simulation
+1; 									use soft diode (if 0, use hard diode)
+1e3; 								R_Vi : Resistance of sound source [V]
+100e-9; 						Ci : Capacity at grid [F]
+1e6; 								Ri : Resistance between grid and ground [Ohm]
+20e3; 							Rg : Resistance in front of grid [Ohm]
+1e3; 								Rk : Resistance between cathode and ground [Ohm]
+10e-6; 							Ck : Capacity between cathode and ground[F]
+2.7e3; 							Rd_plus : Resistance for conducting diode (hard diode) [Ohm]
+100e9; 							Rd_minus : Resistance for closed diode (hard diode) [Ohm]
+2.1;  							mu_d : Parameter for diode characteristic (soft diode)
+0.005; 							kd : Parameter for diode characteristic (soft diode)
+250;  							V_plus : supply voltage for tube [V]
+100e3;  						Rp : Resistance of voltage source / anode resistance [Ohm]
+10e-9; 							C0 : Capacity at output [F]
+100;  							N_Trafo :  windings of (perfect) transformer
+8;  								R0 : Resistance of speaker (will be transformed) [Ohm]
+600;  							kp : Parameter ECC83
+100;  							y : Parameter ECC83
+1.4;  							kx : Parameter ECC83
+1060;  							kg1 : Parameter ECC83
+300;  							kvb : Parameter ECC83
+
+/*****************************************************************************/
+Configuration file for Csound opcode tube.csd
+
+For technical details see the paper
+
+Marco Fink and Rudolf Rabenstein,
+A Csound Opcode for a Triode Stage of a Vacuum Tube Amplifier
+14th International Conference on Digital Audio Effects (DAFx),
+September 19-23, 2011, Paris, France, paper #42
+www.dafx.de 
+
+Don't change syntax of file. Opcode parses file in a very simple way! 
+Values for electrical components taken from the paper  
+
+M. Karjalainen and J. Pakarinen, 
+Wave Digital Simulation of a Vacuum-Tube Amplifier
+Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP),
+May 2006, vol. 5, pp. V-153 - V-156
+
+Created by Marco Fink, LMS Erlangen, 2011, fink@lnt.de, rabe@lnt.de 
+/*****************************************************************************/
