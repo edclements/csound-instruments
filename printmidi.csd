@@ -5,7 +5,7 @@
 
 ksmps	=	32
 
-instr 2
+instr 1
   knotelength init 0
   knoteontime init 0
   kstatus, kchan, kdata1, kdata2 midiin
