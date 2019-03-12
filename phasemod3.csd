@@ -28,6 +28,7 @@ instr 1
   a4 madsr iatt,0.5,1,4
   asig = a3*a4*kamp
   outs asig, asig
+  chnmix asig, "DelaySend"
 endin
 
 instr 2
@@ -40,7 +41,7 @@ endin
 
 instr 3
   asig chnget "ReverbSend"
-  aout nreverb asig, 5, 0.5
+  aout nreverb asig*0.2, 10, 0.5
   outs aout, aout
   chnclear "ReverbSend"
 endin
@@ -63,6 +64,8 @@ endin
 <CsScore>
 f 1 0 32768 10 1
 i 1 0 3600
+i 2 0 -1
+i 3 0 -1
 i 4 0 3600
 ;i 1 0 9 8.05 60
 </CsScore>
